@@ -1,157 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The TeenTech Project: Robofleet </title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f6f9;
-      color: #333;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeenTech Project</title>
 
-    header {
-      background: #0a192f;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202124;
+    display: flex;
+  }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
+  /* SIDEBAR */
+  .sidebar {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    background: #f8f9fa;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+  }
 
-    header p {
-      margin-top: 10px;
-      font-size: 1.2em;
-      opacity: 0.8;
-    }
+  .sidebar h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
+  .sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #202124;
+    padding: 8px 0;
+    font-size: 0.95em;
+  }
 
-    section {
-      background: white;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
+  .sidebar a:hover {
+    color: #1a73e8;
+  }
 
-    h2 {
-      color: #0a192f;
-      margin-top: 0;
-    }
+  /* MAIN CONTENT */
+  .main {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+  }
 
-    ul {
-      padding-left: 20px;
-    }
+  header {
+    border-bottom: 1px solid #ddd;
+    padding: 25px;
+    text-align: center;
+  }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #777;
-    }
+  header h1 {
+    margin: 0;
+    font-weight: 500;
+  }
 
-    .highlight {
-      background: #e6f0ff;
-      padding: 10px;
-      border-left: 5px solid #007bff;
-      border-radius: 5px;
-    }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+  }
 
-  </style>
+  section {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+    font-weight: 500;
+  }
+
+  .box {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    color: #5f6368;
+  }
+
+</style>
 </head>
+
 <body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>TeenTech</h2>
+  <a href="#overview">Overview</a>
+  <a href="#problem">The Problem</a>
+  <a href="#solution">Our Solution</a>
+  <a href="#how">How It Works</a>
+  <a href="#tech">Technologies</a>
+  <a href="#process">Development</a>
+  <a href="#future">Future Improvements</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
 
 <header>
   <h1>TeenTech Project</h1>
-  <p>Innovating with Technology to Solve Real-World Problems</p>
+  <p>Innovative Technology Solution</p>
 </header>
 
 <div class="container">
 
-  <section>
-    <h2>Project Overview</h2>
+  <section id="overview">
+    <h2>Overview</h2>
     <p>
-      This project focuses on developing an intelligent system that uses modern technology
-      to identify and respond to real-world situations. Our aim is to create a solution that
-      is practical, efficient, and scalable.
+      This project focuses on developing an intelligent system that combines
+      artificial intelligence and hardware to solve real-world problems efficiently.
     </p>
   </section>
 
-  <section>
+  <section id="problem">
     <h2>The Problem</h2>
     <p>
-      Many existing systems lack automation and real-time responsiveness. This can lead to
-      inefficiencies, delays, and increased human effort.
+      Many systems today lack automation and real-time decision making,
+      leading to inefficiencies and delays.
     </p>
   </section>
 
-  <section>
+  <section id="solution">
     <h2>Our Solution</h2>
     <p>
-      We designed a system that integrates sensors, artificial intelligence, and real-time
-      data processing to improve accuracy and response time.
+      We created a system that uses AI and sensors to detect, analyse,
+      and respond instantly to its environment.
     </p>
-    <div class="highlight">
-      Key Idea: Automate detection and decision-making using AI.
+
+    <div class="box">
+      <strong>Key Idea:</strong> Automating detection using artificial intelligence.
     </div>
   </section>
 
-  <section>
-    <h2>Technologies Used</h2>
-    <ul>
-      <li>Python</li>
-      <li>Machine Learning / AI</li>
-      <li>Arduino / Microcontrollers</li>
-      <li>Computer Vision</li>
-      <li>GitHub for version control</li>
-      <li>Onshape for design</li>
-      <li>Bambu Studio (3D printing)</li>
-    </ul>
-  </section>
-
-  <section>
+  <section id="how">
     <h2>How It Works</h2>
     <p>
-      The system collects input through sensors and cameras, processes the data using
-      AI models, and outputs decisions or actions in real time.
+      The system captures input through sensors and cameras, processes
+      the data using machine learning models, and produces real-time outputs.
     </p>
   </section>
 
-  <section>
-    <h2>What We Learned</h2>
+  <section id="tech">
+    <h2>Technologies Used</h2>
     <ul>
-      <li>How to integrate hardware and software systems</li>
-      <li>The importance of testing and iteration</li>
-      <li>Practical applications of AI and computer vision</li>
-      <li>Collaboration and version control using GitHub</li>
+      <li>Python</li>
+      <li>Computer Vision</li>
+      <li>Machine Learning</li>
+      <li>Arduino / ESP32</li>
+      <li>GitHub</li>
+      <li>Onshape</li>
+      <li>Bambu Studio</li>
     </ul>
   </section>
 
-  <section>
+  <section id="process">
+    <h2>Development Process</h2>
+    <p>
+      The project was built through iterative testing, combining hardware
+      and software development, and refining the AI model for better accuracy.
+    </p>
+  </section>
+
+  <section id="future">
     <h2>Future Improvements</h2>
     <ul>
-      <li>Improve accuracy of detection models</li>
-      <li>Add more sensors for better data</li>
+      <li>Increase detection accuracy</li>
+      <li>Improve response speed</li>
+      <li>Add more sensors</li>
       <li>Enhance user interface</li>
-      <li>Scale the system for real-world deployment</li>
     </ul>
   </section>
 
 </div>
 
 <footer>
-  <p>© 2026 TeenTech Project</p>
+  © 2026 TeenTech Project
 </footer>
+
+</div>
 
 </body>
 </html>
