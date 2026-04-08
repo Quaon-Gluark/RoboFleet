@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><title>Learning</title><link rel="stylesheet" href="style.css"></head>
+<script>
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+</script>
+<body><header>
+  <nav class="nav">
+        <h2 class="logo">RoboFleet</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="development.html">Development</a>
+      <a href="market.html">Market</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="tools.html">Tools</a>
+      <a href="team.html">Team</a>
+      <a href="learning.html">Learning</a>
+      <a href="links.html">Links</a>
+      <a href="documents.html">Documents</a>
+      <a href="essay.html">Essay</a>
+    </div>
+  </nav>
+<section><h1>Learning</h1>
+<h2>Learning Outcomes</h2>
+<p>Through this project, we learned that real-world problems require multidisciplinary approaches, combining programming, mechanical engineering, and simulation modeling. Developing both digital models and physical prototypes taught us how ideas evolve from concept to implementation.</p>
+
+<p>We also gained an appreciation for how technology can have meaningful social impact. Working with CAD, simulations, and autonomous algorithms strengthened our problem-solving and creative thinking skills. We became more aware of how iterative testing and adaptation are critical in engineering design.</p>
+
+<p>The project inspired further exploration in robotics, autonomous systems, disaster modeling, and digital simulations. Overall, it deepened our understanding of how science and technology can be applied to address practical global challenges, demonstrating the importance of combining creativity, programming, and engineering for real-world impact.</p>
+</section></body></html>

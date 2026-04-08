@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><title>Feedback</title><link rel="stylesheet" href="style.css"></head>
+<script>
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+</script>
+<body><header>
+  <nav class="nav">
+        <h2 class="logo">RoboFleet</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="development.html">Development</a>
+      <a href="market.html">Market</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="tools.html">Tools</a>
+      <a href="team.html">Team</a>
+      <a href="learning.html">Learning</a>
+      <a href="links.html">Links</a>
+      <a href="documents.html">Documents</a>
+      <a href="essay.html">Essay</a>
+    </div>
+  </nav>
+<section><h1>Feedback</h1>
+<h2>Feedback and Collaboration</h2>
+<p>We actively sought input from international collaborators, including alumni from Oxbridge, Harvard, and LSE, as well as professionals from space technology, government agencies, and humanitarian organisations such as the British Red Cross.</p>
+
+<p>Key advice highlighted autonomy, affordability, and reliability. Experts emphasised that autonomous decision-making and adaptability in unexpected events are critical for real-world applications. We incorporated this feedback by programming autonomous navigation and object detection, ensuring robust and safe operation in complex environments.</p>
+
+<p>These collaborations allowed us to refine our goals, anticipate challenges, and design systems that are modular, scalable, and practical for both education and disaster scenarios. Feedback also encouraged exploring global partnerships to extend the project’s reach and impact.</p>
+</section></body></html>

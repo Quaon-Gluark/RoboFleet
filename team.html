@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><title>Team</title><link rel="stylesheet" href="style.css"></head>
+<script>
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+</script>
+<body><header>
+  <nav class="nav">
+        <h2 class="logo">RoboFleet</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="development.html">Development</a>
+      <a href="market.html">Market</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="tools.html">Tools</a>
+      <a href="team.html">Team</a>
+      <a href="learning.html">Learning</a>
+      <a href="links.html">Links</a>
+      <a href="documents.html">Documents</a>
+      <a href="essay.html">Essay</a>
+    </div>
+  </nav>
+<section>
+<h1>Our Team</h1>
+
+<p>Our project is a collaborative effort between students and international experts, combining skills in robotics, programming, mechanical design, and humanitarian applications. Working as a team allowed us to share ideas, divide tasks, and continuously improve our designs through feedback and reflection.</p>
+
+<h2>International Collaborators</h2>
+<ul>
+  <li>Students and mentors from the UK, China, UAE, USA, India, and other countries.</li>
+  <li>Alumni from Oxbridge, Harvard, LSE, and other leading universities.</li>
+  <li>Industry experts from space technology and robotics, including Aurélie Bressollette (CEO of Latitude, ex-Airbus Defence & Space).</li>
+</ul>
+
+<h2>Key Contributions</h2>
+<ul>
+  <li><strong>Programming & Simulation:</strong> Python and Pygame simulations to model drone and rover behavior.</li>
+  <li><strong>Mechanical Design:</strong> Onshape CAD designs for modular robotic systems.</li>
+  <li><strong>Visualization:</strong> Blender 3D models and animations for immersive presentations.</li>
+  <li><strong>Hardware Integration:</strong> Arduino programming for autonomous navigation and sensor operation.</li>
+</ul>
+
+<h2>Teamwork Challenges & Solutions</h2>
+<p>With international collaboration, scheduling meetings and coordinating tasks was sometimes difficult. We overcame this by maintaining clear communication via chat, saving notes, and keeping task logs. Sharing responsibilities allowed us to tackle multiple aspects of the project simultaneously, from coding to physical prototyping.</p>
+
+<h2>Learning from Collaboration</h2>
+<p>Working as a team enhanced creativity, problem-solving, and critical thinking. Feedback from experts guided us in improving autonomy, affordability, and real-world applicability of our robots. This collaboration highlighted how interdisciplinary teamwork and diverse perspectives are essential for tackling complex global challenges.</p>
+
+</section></body></html>
