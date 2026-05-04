@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | RoboFleet</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #f1f5f9;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 40px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+
+    .nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #cbd5f5;
+    }
+
+    .logo {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 100px 60px;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #38bdf8;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .highlight {
+      color: #22c55e;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="nav">
+    <h2 class="logo">RoboFleet</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="development.html">Development</a>
+      <a href="market.html">Market</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="tools.html">Tools</a>
+      <a href="team.html">Team</a>
+      <a href="learning.html">Learning</a>
+      <a href="links.html">Links</a>
+      <a href="documents.html">Documents</a>
+      <a href="essay.html">Essay</a>
+    </div>
+  </nav>
+</header>
+
+<section>
+  <h1>About RoboFleet</h1>
+
+  <p>
+    RoboFleet is a student-led project focused on developing 
+    autonomous robotic systems designed for real-world impact.
+    The project explores how drones and ground-based robots can work together
+    to solve complex challenges in environments where human access is limited or dangerous.
+  </p>
+
+  <p>
+    At its core, RoboFleet combines programming, mechanical design, and electronics
+    to create systems that are both intelligent and practical. Rather than focusing
+    purely on theory, the project emphasises building, testing, and refining
+    working prototypes.
+  </p>
+
+  <p>
+    The vision behind RoboFleet is to make robotics more accessible and adaptable.
+    By focusing on modular design and scalable solutions, the project aims to
+    demonstrate how advanced technology can be applied in a cost-effective
+    and realistic way.
+  </p>
+
+  <p>
+    This project also represents a learning journey-developing skills in problem-solving,
+    engineering, and collaboration. It highlights how modern robotics requires
+    an interdisciplinary approach, bringing together multiple areas of knowledge
+    to create meaningful solutions.
+  </p>
+
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.querySelector("section");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  observer.observe(section);
+});
+</script>
+
+</body>
+</html>
