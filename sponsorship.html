@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sponsorship</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add("show");
+          }
+        });
+      });
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+<header>
+  <nav class="nav">
+    <h2 class="logo">RoboFleet</h2>
+
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="development.html">Development</a>
+      <a href="market.html">Market</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="tools.html">Tools</a>
+      <a href="team.html">Team</a>
+      <a href="learning.html">Learning</a>
+      <a href="links.html">Links</a>
+      <a href="documents.html">Documents</a>
+      <a href="essay.html">Essay</a>
+      <a href="sponsorship.html">Sponsorship</a>
+    </div>
+  </nav>
+</header>
+
+<section>
+  <h1>Company Sponsorship & Partnerships</h1>
+
+  <h2>Why We Are Seeking Sponsorship</h2>
+
+  <p>
+    RoboFleet is an engineering project focused on developing intelligent robotic systems for disaster response, logistics, and autonomous assistance. Our aim is to combine robotics, AI, and real-world engineering to create practical solutions while inspiring young people to explore STEM and innovation.
+  </p>
+
+  <p>
+    As students, we are independently designing, modelling, programming, and testing prototypes using CAD software, embedded systems, robotics platforms, and AI technologies. Sponsorship support would allow us to expand the scale and quality of the project while gaining valuable industry feedback and experience.
+  </p>
+
+  <h2>How Sponsorship Would Help</h2>
+
+  <p>
+    Sponsorship would directly support the development of working robotic prototypes, testing environments, and educational demonstrations. Funding or equipment contributions would help us purchase electronic components, sensors, motors, development boards, 3D printing materials, and robotic hardware required for experimentation and prototyping.
+  </p>
+
+  <p>
+    Additional support would also allow us to improve simulations, develop AI integration, enhance autonomous navigation systems, and create higher-quality demonstrations for competitions, presentations, and public showcases.
+  </p>
+
+  <h2>What Sponsors Receive</h2>
+
+  <p>
+    We are committed to recognising and promoting companies that support our project. Sponsors can be featured on our website, presentations, posters, documentation, and demonstration materials. We are also happy to provide development updates, prototype showcases, and opportunities for collaborative feedback throughout the project.
+  </p>
+
+  <p>
+    By supporting RoboFleet, companies help encourage student innovation, engineering education, and practical STEM learning while contributing to the development of future technology talent.
+  </p>
+
+  <h2>Project Areas</h2>
+
+  <p>
+    Our current areas of development include autonomous robotics, robotic arms, AI-assisted interaction, computer vision, SLAM navigation, modular vehicle systems, and disaster-response logistics. We are continuously researching new technologies and improving both the software and mechanical design of our systems.
+  </p>
+
+  <h2>Contact & Collaboration</h2>
+
+  <p>
+    We welcome opportunities to collaborate with technology companies, robotics manufacturers, engineering organisations, and educational partners interested in supporting student-led innovation. If your company would like to sponsor, advise, or collaborate on the RoboFleet project, we would be excited to discuss potential opportunities.
+  
+</p>
+</section>
+
+</body>
+</html>
